@@ -1,0 +1,66 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js test
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseHg\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\Asus\.cargo\bin;C:\Users\Asus\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Asus\AppData\Local\Programs\Python\Python37\;C:\Users\Asus\AppData\Local\Microsoft\WindowsApps;C:\Users\Asus\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin;C:\Users\Asus\AppData\Roaming\npm;C:\Users\Asus\AppData\Local\Microsoft\WindowsApps;C:\Users\Asus\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: F:\Github\Ya-Like-Jazz\package.json: Unexpected token } in JSON at position 895
+      at JSON.parse (<anonymous>)
+      at C:\Users\Asus\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Asus\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:304:30)
+      at C:\Users\Asus\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:315:13
+
+npm manifest: 
+  {
+      "name": "yalikejazz",
+      "displayName": "yalikejazz",
+      "description": "Add an excerpt from The Bee Movie to replace the boring old Lorem Ipsum text",
+      "version": "1.0.0",
+      "publisher": "Kartik Choudhary",
+      "icon": "icon.png",
+      "repository": {
+          "type": "git",
+          "url": "https://github.com/kartik918/Ya-Like-Jazz"
+        },
+      "homepage": "https://github.com/kartik918/Ya-Like-Jazz",
+      "bugs": {
+        "url": "https://github.com/kartik918/Ya-Like-Jazz/issues"
+      },
+      "engines": {
+          "vscode": "^1.46.0"
+      },
+      "categories": [
+          "Other"
+      ],
+      "activationEvents": [
+        "onCommand:jazz.line",
+        "onCommand:jazz.para"
+      ],
+      "main": "./extension",
+      "contributes": {
+          "snippets": [
+              {
+                  "language": "",
+                  "path": "./snippets/snippets.code-snippets"
+              }
+          ]
+      },
+  
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

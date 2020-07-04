@@ -1,20 +1,39 @@
 {
     "name": "yalikejazz",
     "displayName": "yalikejazz",
-    "description": "Add an excerpt from The Bee Movie to replace the boring old Lorem Ipsum text",
-    "version": "0.0.1",
+    "description": "Add an excerpt from The Bee Movie script to replace the boring old Lorem Ipsum text",
+    "version": "1.0.0",
+    "publisher": "Kartik Choudhary",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kartik918/Ya-Like-Jazz"
+      },
+    "homepage": "https://github.com/kartik918/Ya-Like-Jazz",
+    "bugs": {
+      "url": "https://github.com/kartik918/Ya-Like-Jazz/issues"
+    },
     "engines": {
         "vscode": "^1.46.0"
     },
     "categories": [
-        "Snippets"
+        "Other"
     ],
+    "activationEvents": [
+      "onCommand:jazz.line",
+      "onCommand:jazz.para"
+    ],
+    "main": "./main",
     "contributes": {
-        "snippets": [
-            {
-                "language": "",
-                "path": "./snippets/snippets.code-snippets"
-            }
+        "commands": [
+        {
+            "command": "jazz.line",
+            "title": "Ya Like Jazz: Insert a random line from The Bee Movie"
+        },
+        {
+            "command": "jazz.para",
+            "title": "Ya Like Jazz: Insert a random paragraph from The Bee Movie"
+        }
         ]
-    }
+    },
+
 }
