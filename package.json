@@ -1,0 +1,20 @@
+{
+    "name": "yalikejazz",
+    "displayName": "yalikejazz",
+    "description": "Add an excerpt from The Bee Movie to replace the boring old Lorem Ipsum text",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
