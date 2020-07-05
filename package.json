@@ -1,9 +1,9 @@
 {
     "name": "yalikejazz",
-    "displayName": "yalikejazz",
+    "displayName": "Ya Like Jazz",
     "description": "Add a line or para from The Bee Movie script to replace the boring old Lorem Ipsum text",
-    "version": "1.0.0",
-    "publisher": "Kartik Choudhary",
+    "version": "1.0.1",
+    "publisher": "kartikch",
     "icon": "icon.png",
     "repository": {
         "type": "git",
@@ -35,6 +35,6 @@
             "title": "Ya Like Jazz: Insert a random paragraph from The Bee Movie"
         }
         ]
-    },
+    }
 
 }
