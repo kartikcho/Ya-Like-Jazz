@@ -13,10 +13,11 @@ exports.scriptLine = [
     'I\'ve seen a bee documentary or two. From what I understand, doesn\'t your queen give birth to all the bee children? You\'re an illegitimate bee, aren\'t you, Benson?',
     'I\'m a Pollen Jock! And it\'s a perfect fit. All I gotta do are the sleeves.',
     'Making honey takes a lot of bees doing a lot of small jobs.',
+    'Use the stairs. Your father paid good money for those. Sorry. I\'m excited. Here\'s the graduate. We\'re very proud of you, son. A perfect report card, all B\'s. Very proud.',
 ];
   
 exports.scriptPara = [
-    'Never thought I\'d make it. Three days grade school, three days high school. Those were awkward. Three days college. I\'m glad I took a day and hitchhiked around the hive.',
+    'Never thought I\'d make it. Three days grade school, three days high school. Those were awkward. Three days college. I\'m glad I took a day and hitchhiked around the hive. You did come back different.',
     'We know that you, as a bee, have worked your whole life to get to the  point where you can work for your whole life. Honey begins when our valiant Pollen Jocks bring the nectar to the hive. Our top-secret formula is automatically  color-corrected, scent-adjusted and bubble-contoured into this soothing sweet syrup with its distinctive golden glow you know as Honey\!',
     'Most bee jobs are small ones. But bees know that every small job, if it\'s done well means a lot. But choose carefully because you\'ll stay in the job you pick for the rest of your life.',
     'I pick up some pollen here, sprinkle it over here. Maybe a dash over there, a pinch on that one. See that? It\'s a little bit of magic. That\'s amazing. Why do we do that? That\'s pollen power. More pollen, more flowers, more nectar, more honey for us.',

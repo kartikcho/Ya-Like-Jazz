@@ -1,9 +1,10 @@
 {
     "name": "yalikejazz",
     "displayName": "yalikejazz",
-    "description": "Add an excerpt from The Bee Movie script to replace the boring old Lorem Ipsum text",
+    "description": "Add a line or para from The Bee Movie script to replace the boring old Lorem Ipsum text",
     "version": "1.0.0",
     "publisher": "Kartik Choudhary",
+    "icon": "icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/kartik918/Ya-Like-Jazz"
