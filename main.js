@@ -1,16 +1,13 @@
 var vscode = require('vscode');
-var beeScript = require('./static/beeMovieScript.js');
+var beeScript = require('./source/beeMovieScript.js');
 
 var scriptLine = beeScript.scriptLine;
 var scriptPara = beeScript.scriptPara;
-// Pick a line/para at random
-var randomLine = scriptLine[Math.floor(Math.random() * scriptLine.length)];
-var randomPara = scriptPara[Math.floor(Math.random() * scriptPara.length)];
 
 function activate(context) {
   var commands = [
-    vscode.commands.registerCommand('jazz.line', insertText('line')),
-    vscode.commands.registerCommand('jazz.para', insertText('para')),
+    vscode.commands.registerCommand('jazz.line', insertLine),
+    vscode.commands.registerCommand('jazz.para', insertPara),
   ];
 // Register all commands
   commands.forEach(function (command) {
@@ -23,17 +20,28 @@ function insertText(value) {
   editor.edit(
     edit => editor.selections.forEach(
       selection => {
+        edit.delete(selection);
+        // Pick a line at random
         if(value === 'line'){
-          edit.delete(selection);
+          let randomLine = scriptLine[Math.floor(Math.random() * scriptLine.length)];
           edit.insert(selection.start, randomLine);  
         }
+        // Pick a para at random
         if(value === 'para'){
-          edit.delete(selection);
+          let randomPara = scriptPara[Math.floor(Math.random() * scriptPara.length)];
           edit.insert(selection.start, randomPara);  
         }
       }
     )
   );
+}
+
+function insertLine(){
+  insertText('line');
+}
+
+function insertPara(){
+  insertText('para');
 }
 
 exports.activate = activate;
