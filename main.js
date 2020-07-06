@@ -8,6 +8,7 @@ function activate(context) {
   var commands = [
     vscode.commands.registerCommand('jazz.line', insertLine),
     vscode.commands.registerCommand('jazz.para', insertPara),
+    vscode.commands.registerCommand('jazz.multiplePara', insertMultiplePara),
   ];
 // Register all commands
   commands.forEach(function (command) {
@@ -31,6 +32,13 @@ function insertText(value) {
           let randomPara = scriptPara[Math.floor(Math.random() * scriptPara.length)];
           edit.insert(selection.start, randomPara);  
         }
+        // Pick multiple random paras
+        if(value === 'multiplePara'){
+          for(let i = 0; i < 5; i++) {
+            let randomPara = scriptPara[Math.floor(Math.random() * scriptPara.length)] + "\n\n";
+            edit.insert(selection.start, randomPara);
+          }
+        }
       }
     )
   );
@@ -42,6 +50,10 @@ function insertLine(){
 
 function insertPara(){
   insertText('para');
+}
+
+function insertMultiplePara(){
+  insertText('multiplePara');
 }
 
 exports.activate = activate;
