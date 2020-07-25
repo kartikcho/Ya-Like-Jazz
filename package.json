@@ -21,18 +21,23 @@
     ],
     "activationEvents": [
       "onCommand:jazz.line",
-      "onCommand:jazz.para"
+      "onCommand:jazz.para",
+      "onCommand:jazz.multiplePara"
     ],
     "main": "./main",
     "contributes": {
         "commands": [
         {
             "command": "jazz.line",
-            "title": "Ya Like Jazz: Insert a random line from The Bee Movie"
+            "title": "Ya Like Jazz: Insert a line from The Bee Movie"
         },
         {
             "command": "jazz.para",
-            "title": "Ya Like Jazz: Insert a random paragraph from The Bee Movie"
+            "title": "Ya Like Jazz: Insert a paragraph from The Bee Movie"
+        },
+        {
+            "command": "jazz.multiplePara",
+            "title": "Ya Like Jazz: Insert multiple paragraphs from The Bee Movie"
         }
         ]
     }
