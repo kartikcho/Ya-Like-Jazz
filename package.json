@@ -2,16 +2,16 @@
     "name": "yalikejazz",
     "displayName": "Ya Like Jazz",
     "description": "Add a line or para from The Bee Movie script to replace the boring old Lorem Ipsum text",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "publisher": "kartikch",
     "icon": "icon.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/kartik918/Ya-Like-Jazz"
-      },
+    },
     "homepage": "https://github.com/kartik918/Ya-Like-Jazz",
     "bugs": {
-      "url": "https://github.com/kartik918/Ya-Like-Jazz/issues"
+        "url": "https://github.com/kartik918/Ya-Like-Jazz/issues"
     },
     "engines": {
         "vscode": "^1.46.0"
@@ -20,26 +20,25 @@
         "Other"
     ],
     "activationEvents": [
-      "onCommand:jazz.line",
-      "onCommand:jazz.para",
-      "onCommand:jazz.multiplePara"
+        "onCommand:jazz.line",
+        "onCommand:jazz.para",
+        "onCommand:jazz.multiplePara"
     ],
     "main": "./main",
     "contributes": {
         "commands": [
-        {
-            "command": "jazz.line",
-            "title": "Ya Like Jazz: Insert a line from The Bee Movie"
-        },
-        {
-            "command": "jazz.para",
-            "title": "Ya Like Jazz: Insert a paragraph from The Bee Movie"
-        },
-        {
-            "command": "jazz.multiplePara",
-            "title": "Ya Like Jazz: Insert multiple paragraphs from The Bee Movie"
-        }
+            {
+                "command": "jazz.line",
+                "title": "Ya Like Jazz: Insert a line from The Bee Movie"
+            },
+            {
+                "command": "jazz.para",
+                "title": "Ya Like Jazz: Insert a paragraph from The Bee Movie"
+            },
+            {
+                "command": "jazz.multiplePara",
+                "title": "Ya Like Jazz: Insert multiple paragraphs from The Bee Movie"
+            }
         ]
     }
-
 }
